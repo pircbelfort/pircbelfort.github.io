@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PIRCBELFORT - Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      /* Hide the QR code image initially */
+      #qr-code {
+        display: none;
+      }
+    </style>
+    <script>
+      function showQRCode() {
+        document.getElementById('qr-code').style.display = 'block';
+      }
+    </script>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <!-- Header -->
+    <header class="bg-white shadow">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">PIRCBELFORT</h1>
+        <nav class="space-x-4">
+          <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
+          <a href="#services" class="text-gray-600 hover:text-gray-900">Services</a>
+          <a href="#blog" class="text-gray-600 hover:text-gray-900">Blog</a>
+          <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
+          <a href="#order" class="text-gray-600 hover:text-gray-900">Order Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-100 text-center py-20">
+      <h2 class="text-4xl font-bold mb-4">Welcome to My Website</h2>
+      <p class="text-lg text-gray-700">I design clean and user-friendly websites that help businesses grow online.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 px-6 md:px-20">
+      <h2 class="text-3xl font-bold text-center mb-6">About Me</h2>
+      <p class="text-gray-700 text-center max-w-3xl mx-auto">
+        Hi, I'm Faheem — a passionate web designer who creates beautiful, functional, and responsive websites. I love working with clients to bring their visions to life through design.
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-white py-12 px-6 md:px-20">
+      <h2 class="text-3xl font-bold text-center mb-6">My Services</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="p-6 bg-blue-50 rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-2">Web Design</h3>
+          <p>I design clean, engaging websites that work perfectly on all devices.</p>
+        </div>
+        <div class="p-6 bg-blue-50 rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-2">Responsive Design</h3>
+          <p>Your website will look great on desktops, tablets, and phones.</p>
+        </div>
+        <div class="p-6 bg-blue-50 rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-2">Brand Identity</h3>
+          <p>I help you create a strong visual identity that reflects your brand.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section (Updated) -->
+    <section id="blog" class="bg-white py-12 px-6 md:px-20">
+      <h2 class="text-3xl font-bold text-center mb-6">Personal Blog</h2>
+      <article class="max-w-3xl mx-auto text-gray-700 leading-relaxed">
+        <h3 class="text-2xl font-semibold mb-2">Why Good Design is More Than Just Looks</h3>
+        <p class="text-sm text-gray-500 mb-4">May 28, 2025 &nbsp; • &nbsp; Faheem</p>
+        <p class="mb-4">
+          Many think a good website is all about beautiful colors and stylish fonts. But design is much more than that.
+          A great website should be user-friendly, fast, mobile-ready, and tell the brand's story clearly. In my designs,
+          I always focus on the user experience — because that’s what really matters in the end.
+        </p>
+      </article>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="bg-white py-12 px-6 md:px-20">
+      <h2 class="text-3xl font-bold text-center mb-6">Order Now</h2>
+      <p class="text-center text-gray-700 mb-4">
+        To place your order, please pay ₹1500 using the QR code below.
+      </p>
+      <img id="qr-code" src="https://i.postimg.cc/RZfDVb7D/upi-googlepay.jpg" alt="Google Pay UPI QR code for payment" class="mx-auto mb-4" />
+      <p class="text-center text-gray-700 mb-4">
+        After sending the payment, please send a verification email to <a href="mailto:runtyjudge74@gmail.com" class="text-blue-600">runtyjudge74@gmail.com</a>.
+      </p>
+      <button onclick="showQRCode()" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Order Now</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-blue-100 py-12 px-6 md:px-20">
+      <h2 class="text-3xl font-bold text-center mb-6">Contact Me</h2>
+      <p class="text-center text-gray-700 mb-6">
+        Interested in working together? Let's connect.
+      </p>
+      <form class="max-w-xl mx-auto space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full px-4 py-2 rounded border border-gray-300" />
+        <input type="email" placeholder="Your Email" class="w-full px-4 py-2 rounded border border-gray-300" />
+        <textarea placeholder="Your Message" class="w-full px-4 py-2 rounded border border-gray-300"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-6 text-center text-gray-600">
+      <p>&copy; 2025 PIRCBELFORT. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
